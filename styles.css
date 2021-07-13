@@ -1,0 +1,147 @@
+
+.pagestructure{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 30px auto 44px 1fr 40px 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "blank header"
+    "land land"
+    "search search"
+    "buttonforsearching buttonlucky"
+    "footfirst footfirst"
+    "helplink businesslink"
+
+}
+.topbar{
+    grid-area: header;
+    color: rgba(0,0,0,0.87);
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    justify-self: end;
+    display:grid;
+    grid-template-columns: 34px 73px 30px 45px 30px;
+    justify-items: end;
+    align-items: center;
+}
+.topbar a:link{
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+}
+.logo{
+    grid-area: land;
+    padding-top: 105px;
+    padding-bottom: 20px;
+    justify-self: center;
+    }
+.searchbar{
+    grid-area: search;
+    margin-top: 5px;
+    justify-self: center;
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 45px minmax(50px, 486px) 35px;
+    justify-items: center;
+    align-items: center;
+    border-top: 0.5px solid rgb(226, 226, 226);
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    border-left: 0.5px solid rgb(226, 226, 226);
+    border-right: 0.5px solid rgb(226, 226, 226);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.searchimg{justify-self: center;}
+.voiceimg{justify-self: left;}
+.searchform{
+    margin-top: 5px;
+    justify-self: left;
+    background-color: transparent;
+    border:none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+}
+.searchbutton{
+    grid-area: buttonforsearching;
+    justify-self: end;
+    padding-right: 20px;
+    padding-top: 30px;
+}
+.feelinglucky{
+    grid-area: buttonlucky;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.higherbar{
+    grid-area: footfirst;
+    background: #f2f2f2;
+    color: rgba(0,0,0,0.54);
+    font-family: arial,sans-serif;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-top: 11.5px;
+}
+.lowerbarright{
+    grid-area: helplink;
+    background: #f2f2f2;
+    color: rgb(95,99,104);
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 11.5px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 96px 83px 64px 144px 1fr;
+    
+}
+.lowerbarright a:link{
+    text-decoration: none;
+    color: rgb(95,99,104);
+}
+.lowerbarleft{
+    grid-area: businesslink;
+    background: #f2f2f2;
+    color: rgb(98, 99, 100);
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-top: 11.5px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 73px 65px 78px;
+    justify-items: end;
+}
+.lowerbarleft a:link{
+    text-decoration: none;
+    color: rgb(98, 99, 100);
+}
+.buttons {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    }
+.account{
+    background-size: 32px 32px;
+    border: 0;
+    border-radius: 50%;
+    margin: -1px;
+    position: relative;
+    height: 32px;
+    width: 32px;
+}
