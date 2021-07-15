@@ -1,0 +1,80 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 10px ;
+    color: black;
+}
+header > h3 {
+    padding: 10px ;
+}
+
+.score-board{
+    margin: 20px auto;
+    border: 3px solid black;
+    text-align: center;
+   
+    width: 200px;
+    padding: 10px ;
+    font-size: 25px;
+    padding: 15px 20px;
+    position: relative;
+    
+}
+.badge{
+    text-align: center;
+    position: relative;
+    padding: 2px 10px;
+}
+#userLabel { 
+    position: absolute;
+    top:0px;
+    left: 25px;
+}
+#computerLabel { 
+    position: absolute;
+    top:0px;
+    right: 15px;
+}
+
+.result{
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.userChoice{
+    margin: 30px 0;
+    text-align: left;
+    padding-left: 50px;
+}
+.choice{
+    border: 4px black solid;
+    border-radius: 50%;
+    margin: 0 15px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+div > h2 {
+    padding-left: 210px;
+    padding-bottom: 30px;
+}
+.choice:hover{
+    cursor: pointer;
+    background: grey ;
+}
+#action-message{
+    text-align: center;
+    color: black;
+    font-size: 35px;
+}
+
+
+
