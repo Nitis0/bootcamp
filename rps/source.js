@@ -5,7 +5,7 @@ const userScore_span = document.getElementById("userScore");
 const computerScore_span = document.getElementById("computerScore");
 
 const scoreBoard_div = document.querySelector(".score-board");
-const result_div = document.querySelector(".result");
+const result_p = document.querySelector(".result > p");
 
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
@@ -21,25 +21,26 @@ function convertToWord(a){
     if(a =="r") return "Rock";
     if(a == "p") return "Paper";
     return "Scissors";
-
 }
+
 function win(userChoice,computerChoice){
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${convertToWord(userChoice)} (User) beats ${convertToWord(computerChoice)}(Robot), You Win!!}`
+    result_p.innerHTML = `${convertToWord(userChoice)} (User) beats ${convertToWord(computerChoice)}(Robot), You Win!!}`;
 }
 
 function lose(userChoice,computerChoice){
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${convertToWord(userChoice)} (User) loses to ${convertToWord(computerChoice)}(Robot), You Lost!!}`
+    result_p.innerHTML = `${convertToWord(userChoice)} (User) loses to ${convertToWord(computerChoice)}(Robot), You Lost!!}`;
+}
 
 function draw(userChoice,computerChoice){
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_div.innerHTML = `${convertToWord(userChoice)} (User) draws with ${convertToWord(computerChoice)}(Robot), Draww!!}`
+    result_p.innerHTML = `${convertToWord(userChoice)} (User) draws with ${convertToWord(computerChoice)}(Robot), Draww!!}`;
 
 }
 
@@ -71,7 +72,7 @@ main();
 function main(){
     rock_div.addEventListener('click', function(){
         game("r");
-        console.log("rock");
+        
     })
     paper_div.addEventListener('click', function(){
         game("p");
@@ -79,5 +80,4 @@ function main(){
     scissors_div.addEventListener('click', function(){
         game("s");
     })
-}
 }
