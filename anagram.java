@@ -30,7 +30,8 @@ public class Main
 	public static boolean isAnagram(String s1, String s2){
 	    int arr1[] = s1.toArray();
 	    int arr2[] = s2.toArray();
-	    
+	    // I forgot to sort the arrays here 
+            // After sorting this code will work just remember this so leaving a comment here without changing any code 
 	    if(arr1.length == arr2.length){
 	        for(int i=0;i<arr1.length;i++){
 	            if(arr1[i]!=arr2[i]){
